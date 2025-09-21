@@ -18,5 +18,6 @@ jobs:
           publish-dir: .   # Your site root (or "dist" if you have a build step)
           production-deploy: true
           github-token: ${{ secrets.GITHUB_TOKEN }}
+        env:
           NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
           NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}
